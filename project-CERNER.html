@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Project Inner Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="w-100 fixed-top d-flex justify-content-center align-items-center header">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#about">About</a></li>
+        <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
+        <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
+        <li><a class="nav-link scrollto" href="#services">Services</a></li>
+        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+        <li class="dropdown"><a href="#"><span>Sitemap</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="edu-timeline-web-main\index.html" target="_blank">Education</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Art portfolio</a></li>
+            <li><a href="#">My Visual diary</a></li>
+            <li><a href="#">Yoga</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Projects Page
+          </h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Inner Page</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+        <div class="row text-right my-custom-row align-items-center">
+          <div class="col-sm-7 offset-0">
+            <h1>Ensemble model for Covid-19 Detection in Chest radiographs</h1>
+            <br>
+              <li><strong>OBJECTIVE:</strong>Ensemble Deep Learning model for Covid-19 Detection in Chest radiographs using Segmentation and Classification.</li>
+              <li><strong>OUTCOME:</strong> 98.3% accuracy in Lungs Segmentation on UNET and achieved covid detection on 
+                CXRs with cross-val accuracy over 95%, work to be published in international conferences.</li>
+              <li><strong>DOMAIN:</strong> Medical image analysis, Deep-learning.</li><br>
+              <div class="row text-right justify-content-center align-items-center">
+                <a href="https://github.com/abhiazadz/AI-CXR-COVID-19-Detection" target="_blank" role="button" class="btn btn-warning btn-sm">Github project Link</a>
+            </div>
+          </div>
+          <div class="col-sm-5 offset-0">
+            <br>
+            <div class="row text-center my-custom-row justify-content-center align-items-center">
+              <img src="assets/img/projects/Cerner/flowchart.jpg" alt="" Height =300 class="rounded"  />
+              fig 1. Workflow pipeline
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-right my-custom-row align-items-center">
+          <div class="col-sm-7 offset-0">
+            <h3>Summary</h3>
+            In this project we developed an ensemble deep learning frame-
+            work for detecting pulmonary manifestations of COVID-19 from
+            chest X-rays. We incorporated lung segmentation using U-Net
+            to identify the thoracic region of interest, further utilized to train
+            deep learning models to learn from relevant features. Fine-tuning
+            of selected ImageNet pre-trained deep learning models was done
+            by learning and evaluating on publicly available CXR collections.
+            Ensemble methods like stacked generalization, voting, averaging,
+            and the weighted average was used to combine predictions from
+            best-performing models. The purpose of incorporating ensemble
+            techniques is to overcome generalization errors caused by noise and
+            training on a limited number of data sets. Experimental evaluations
+            concluded on significant improvement in performance using the
+            deep fusion neural network i.e. WE-Net model which resulted in
+            an accuracy of 99.02% and 0.989 area under the curve in detecting
+            COVID-19 from CXRs. The combined use of image segmentation,
+            pre-trained deep learning models, and ensemble learning resulted in
+            improved predictions.
+
+          </div>
+          <div class="col-sm-4 offset-1">
+            <br>
+            <div class="row text-center my-custom-row justify-content-center align-items-center">
+              <img src="assets/img/projects/Cerner/Unet.png" alt="" width =280 class="rounded"  />
+              fig 2. Unet model architecture
+            </div>
+          </div>
+        </div>
+
+
+
+        <h3>Data Augmentation and pre-processing</h3>
+        For Unet Lung Segmentation training 941 CXRs and corresponding manual lung mask pairs from sourced from SCR database, 
+        Shenzhen and Montgomery County of NIH database. Further augmentation was performed to increase the data points for the training. 
+        After the augmentation, additional pre-processing was performed on the CXR masks, thresholding the diluted pixel back to 0 values (black). 
+        Further, the CXRs used for the segmentation model were pre-processed using CLAHE followed by gaussian blurring to mimic the COVID positive CXRs, 
+        thus enabling segmentation model to learn on abnormal CXRs.
+        <br><br>
+        For Classification trainings, COVID-19 Radiography database from Kaggle was used consisting of 3616 Covid-19 infected CXRs and 10192 Normal labeled CXRs. 
+        As the class sizes of our data set was unbalanced which could lead to biased learning. Hence, class balancing was done to overcome overfitting by 
+        augmenting the training data, which was achieved by adding random variations in the following attributes of the images: rotations, translational shifts, 
+        zooming, shear shifts, horizontal flips, and brightness intensity changes. 
+
+        <div class="row text-center my-custom-row justify-content-center align-items-center">
+          <div class="col-sm-3 offset-0">
+            <br>  
+            <img src="assets/img/projects/Cerner/CXR_augs.png" alt="" height =250 class="rounded"  />
+            <br>fig 3. CXR Augmentations
+          </div>
+          <div class="col-sm-5 offset-0">
+            <br>
+            <img src="assets/img/projects/Cerner/data_structure.png" alt="" height =220 class="rounded"  />
+            <br>fig 3. Training data structure
+          </div>
+          <div class="col-sm-4 offset-0">
+            <br>
+            <img src="assets/img/projects/Cerner/Lungmask_aug.png" alt="" height =250 class="rounded"  />
+            <br>fig 4. CXR & Lung mask pair-wise augmentations
+          </div>
+        </div>
+
+        <h3>Unet lung segmentation and lung RoI extraction</h3>
+        For training our classification model we extracted the Lung region of interest (ROI) from the CXRs to limit our model to learn only from the Lung region of the CXRs and avoid any kind of mis-learning. For this we trained a Unet lung segmentation model using the Adam optimizer on manual lung masks and achieved test accuracy of 98.3% and IoU test score of 0.925. and image cropping. 
+        We then performed contour detection over the lung masks. A union of the fit bounding boxes around the contours was cropped, providing us ROI approximation of the thoracic cavity consisting of the lung lobes. These images were used to train our DL classification models only the relevant features, thereby aiding reliable decision-making. 
+        <div class="row text-center my-custom-row justify-content-center align-items-center">
+          <div class="col-sm-12 offset-0">
+            <br>  
+            <img src="assets/img/projects/Cerner/roi.JPG" alt="" height =250 class="rounded"  />
+            <br>fig 5. Lung RoI extraction pipeline
+          </div>
+        </div>
+
+        <h3>Transfer learning-based Classification training</h3>
+        We have trained 5 different model on ImageNet pre-trained CNN for architectures: VGG-16, ResNet50, DenseNet201 (DNet201), InceptionV3 (InceptV3), and Xception in our study and a final ensemble model was developed out of the whole training.
+        The pre-trained models were fine-tuned by truncating the last convolution layer, and classifier layers are further replaced by custom build layers. We added an average pooling layer to reduce the spatial size of representation generated by previous kernels after convolution. Batch normalization has also been included in the architecture of all pre-trained models except for VGG-16. After the convolutional and pooling layers, a classification network is placed at the end of the model consisting of fully connected layers (FCLs). We have used FCL with 256 neurons with ReLU activation function followed by dropout.
+        <br><br>
+
+        <h3>Ensemble model</h3>
+        Ensemble techniques use a combination of learning algorithms to optimize better predictive performance. They typically reduce overfitting in models and make the model more generalizable, making it unlikely to be influenced by small changes in the training data.
+        We studied different ensemble techniques for COVID-19 case detection by combining predictions from multiple deep learning models via various ensemble strategies such as hard voting, weighted averaged voting,  SVM, XG-boost and stacked generalization
+        <br><br>
+
+        <h3>AI explainability using Gradcam</h3>
+        While using DL models in medical image prediction problems, it’s important to understand their learned behavior, to explain the pre-dictions from these black-box models, and understand the clinical
+        decision making.
+        In our proposed work, we have applied a gradient-based approach called Grad-CAM, which measures the gradients of features maps in the final convolution layer on a CNN model for a target image, highlighting the critical regions that are class-discriminating saliency maps.
+
+        <div class="row text-center my-custom-row justify-content-center align-items-center">
+          <div class="col-sm-12 offset-0">
+            <br>  
+            <img src="assets/img/projects/Cerner/gradcam_final.drawio_1.png" alt="" height =250 class="rounded"  />
+            <br>fig 6. GradCam results on the trained classification models
+          </div>
+        </div>
+
+        
+        <div class="row text-center my-custom-row justify-content-center align-items-center">
+          <div class="col-sm-12 offset-0">
+            <br>  
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dImxWvvJ55I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br> Video demonstration 
+          </div>
+        </div>
+
+
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Abhinav Azad</h3>
+      <p>I hope you enjoyed going through my personal website, portfolio and blogs. You can also follow me here.</p>
+      <div class="social-links">
+        <a href="https://twitter.com/abhiazads" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/abhinav.azad.1" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/abhinavazad/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/abhinav-azad-abbb1272/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/abhiazadz" class="github"><i class="bx bxl-github"></i></a>
+
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Abhi</span></strong>. <br>All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- Designed by Abhinav using Bootstrap 5.0-->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
