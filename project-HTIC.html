@@ -32,29 +32,37 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="w-100 fixed-top d-flex justify-content-center align-items-center header">
+  <header id="header" class="w-100 fixed-top d-flex justify-content-center align-items-center header-transparent">
 
     <nav id="navbar" class="navbar">
       <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
         <li><a class="nav-link scrollto" href="#about">About</a></li>
-        <li><a class="nav-link scrollto" href="#projects">Projects</a></li>
+        <!--li><a class="nav-link scrollto" href="#projects">Projects</a-->
+        <li class="dropdown"><a class="nav-link scrollto" href="#projects"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#" target="_blank">DDP-Kuka IIWA</a></li>
+            <li><a href="#" target="_blank">CERNER imaging project</a></li>
+            <li><a href="project-CIIRC.html" target="_blank">CIIRC- detection on Jetson nano</a></li>
+            <li><a href="project-INFYU.html" target="_blank">InfyU labs - Grain detector</a></li>
+            <li><a href="project-NUT.html" target="_blank">NUT- Tapping screw</a></li>
+            <li><a href="project-BETIC.html" target="_blank">BeTiC - Ergonomic crutch</a></li>
+            <li><a href="project-HTIC.html" target="_blank">HTIC - Surgical robot</a></li>
+          </ul>
+        </li>
         <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
-        <li><a class="nav-link scrollto" href="#services">Services</a></li>
         <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
         <li class="dropdown"><a href="#"><span>Sitemap</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
-                <li><a href="edu-timeline-web-main\index.html" target="_blank">Education</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
+                <li><a href="edu-timeline-web-main\index.html" target="_blank">Education and Awards</a></li>
+                <li><a href="#">IITM course</a></li>
+                <li><a href="#">ČVUT courses</a></li>
               </ul>
             </li>
-            <li><a href="#">Art portfolio</a></li>
+            <li><a href="#portfolio">Art portfolio</a></li>
             <li><a href="#">My Visual diary</a></li>
             <li><a href="#">Yoga</a></li>
           </ul>
