@@ -94,29 +94,119 @@
       <div class="container">
 
         <div class="row text-right my-custom-row align-items-center">
-          <div class="col-sm-7 offset-0">
-            <h1>Real-time detection of miniature parts in Robotic assembly line</h1>
+          <div class="col-sm-6 offset-0">
+            <h1>Real-time detection of minuscule parts in collaborative robotics</h1>
             <br>
-            <li><strong>OBJECTIVE:</strong> Minimizing end-effector offsets in ‘Maxio - 5 DoF spinal surgical robot’ during arm rotations.</li>
-            <li><strong>OUTCOME:</strong> Achieved Zero-offset condition for rotation of any arm along any axis reducing the operating time and complexity.</li>
+            <li><strong>OBJECTIVE:</strong> Detection of miniature parts in Human-Robot interaction assembly line on Nvidia Jetson Nano micro-controller and Intel Realsense depth camera 435i.</li>
+            <li><strong>OUTCOME:</strong> Live detection of tiny parts with Full HD imaging was optimised 61x faster in ROS architecture.</li>
             <li><strong>DOMAIN:</strong> Computer Vision, ROS, Micocontroller.</li><br>
             <div class="row text-right justify-content-center align-items-center">
-              <a href="https://github.com/abhiazadz/Grain-Detector-Analyzer" target="_blank" role="button" class="btn btn-warning btn-sm">Github project Link</a>
+              <a href="https://github.com/abhiazadz/Fast-BGsub-object-localisation" target="_blank" role="button" class="btn btn-warning btn-sm">Github project Link</a>
             </div>
           </div>
-          <div class="col-sm-4 offset-1">
+          <div class="col-sm-6 offset-0">
             <br>
             <div class="row text-center my-custom-row justify-content-center align-items-center">
-              <img src="assets/img/projects/infyU/ellipsces.png" alt="" width =300 class="rounded"  />
-              fig 1. Detection & Analysis of various ellipsce
+              <img src="assets/img/projects/CIIRC/pipeline_U.png" alt=""  class="rounded"  />
+              fig 1. Optimised detection pipeline on Jetson-nano 
             </div>
           </div>
         </div>
-        <p>
-          Example inner page template
-        </p>
+        <div class="row text-right my-custom-row align-items-center">
+          <div class="col-sm-9 offset-0">
+            <h3>Background</h3>
+            As a part of Collaborative Robotics operative Workspace project, 
+            my internship project was focused on improving Object detection module at slave robot ends in the assembly line workspace.
+            <br><br>
+            The setup consists of a Master system controlling the whole assembly line and Robots. 
+            The robots are treated as slave and have a their own imaging uint as the Intel realsense camera and a processing 
+            unit as Jetson nano which is compact powerful computer that lets you run multiple neural networks in parallel for applications 
+            like image classification, object detection, segmentation, and speech processing. 
+            <br><br>
+            Our goal was to reduce delay and the load in Master by leveraging the processing capabilities of Jetson nano in a limiting processing power scenario.
+            <br><br>
+
+            <h3>Problem statement</h3>
+            We wanted achieve Object detection of small machine parts(like nut, bolts) in the assembly line at the slaves in Jetson nano, 
+            which requires high resolution images to resolve small components but with the limiting processing capabilities of the slaves, 
+            object detection in HD imagescan’t be performed in real time. Hence we want to optimise out Object detection process with additional 
+            preprocessing that could make the process of object detection seamless at the slave end. 
+            <br><br>
+
+            Various image traditional and advanced image processing techniques were studied and compared using profiling of various functions 
+            in python to achieve the object localisation in factors in 10 milliseconds.
+            <br><br>
+
+
+            
+          </div>
+          <div class="col-sm-3 offset-0">
+            <iframe width="300" height="500" src="https://www.youtube.com/embed/Se07gom3FhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="row text-right my-custom-row align-items-center">
+            <div class="col-sm-12 offset-0">
+              <h3>Method and pipeline</h3>
+
+              Raw image in HD stream is published as a ROS message by the intel realsense camera node which is. 
+              Using CV_Bridge ROS message is converted into readable cv2 arrays for further preprocessing.
+              <br><br>
+
+              As soon as the program is started, we assume that the workspace is empty, the background is captured and saved. This saved empty background is used for background subtraction to segment out the newly introduced objects in the workspace. We keep a threshold value to tackle noise, shadow and lighting variations. 
+              <br><br>
+
+              Once we perform background subtraction, we get the segmentation of the newly introduced parts in the robot workspace. Using edge detection techniques, various objects are localised and cropped images of these small objects are cut out which reduces the dimensionality by factors of 100. 
+              <br><br>
+
+              These cropped frames are then pushed for object detection to predict their names or class labels. The master subscribes the object detection results are published by the slaves and incooperate the visual scene for planning, collision avoidance and human-collaborative tasks in real-time,
+              <br><br>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="row text-right my-custom-row align-items-center">
+          <div class="col-sm-8 offset-0">
+            <h3>Collaborative robotics workspace</h3>
+
+            The System consists of Masters and slaves, with robots in the operating end and a realtime vision stream for feedback and planning. ROS- Robotic Operating System was used as the architecture framework for the whole project, programmed in Python.
+            <br><br>
+            The Robots are the Slave systems that operates in the assembly line.
+            <br><br>
+            Each slave system consists of two modules, 
+            <ul>
+              <li>The <strong>manipulation module</strong> consists of a Robotic arm.</li>
+              <li>The <strong>Computer vision module</strong> consists of a Jetson nano for processing and an Intel Realsense depth 435i camera for imaging in the local workspace.  </li> 
+            </ul>
+
+            The slaves performs the manipulation as commanded by the master and the computer vision module performs object detection and takes care of the visual feedback in real time.
+            <br><br>
+            Master controls the assembly system, robotic arm plannings, receives slave’s  feedbacks and  based on it the master takes appropriate decision in real-time.
+            <br><br>
+            A typical object localisation and segmentation of various parts(6-8 parts) in a HD live stream could be be achieved in less than <strong>40 milliseconds</strong>.
+          </div>
+          <div class="col-sm-4 offset-0">
+            <div class="row text-center my-custom-row justify-content-center align-items-center"></div>
+              <img src="assets/img/projects/CIIRC/table_top_camera.png" alt=""  width="400" class="rounded"  />
+              <br>fig 2. Experiment and test setup
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row text-center my-custom-row align-items-center">
+        <div class="col-sm-12 offset-0">
+          <div class="row text-center my-custom-row justify-content-center align-items-center"></div>
+            <img src="assets/img/projects/CIIRC/crow_pipeline_straight.png" alt="" height ="210" class="rounded"  />
+            <br>fig 3. Object detection Workflow
+          </div>
+        </div>
       </div>
     </section>
+    <h2><u>
+    
 
   </main><!-- End #main -->
 

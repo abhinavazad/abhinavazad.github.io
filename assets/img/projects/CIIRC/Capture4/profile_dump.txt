@@ -1,0 +1,98 @@
+         924 function calls (887 primitive calls) in 0.042 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.001    0.001    0.042    0.042 Final_write.py:211(mainfunn)
+        9    0.030    0.003    0.030    0.003 {imwrite}
+        1    0.004    0.004    0.004    0.004 {resize}
+        7    0.002    0.000    0.003    0.000 Final_write.py:148(cropp)
+    24/22    0.002    0.000    0.002    0.000 {built-in method numpy.core._multiarray_umath.implement_array_function}
+        5    0.000    0.000    0.002    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/numeric.py:268(full)
+        5    0.000    0.000    0.002    0.000 <__array_function__ internals>:2(copyto)
+        7    0.000    0.000    0.001    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:1473(_array_str_implementation)
+        7    0.000    0.000    0.001    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:516(array2string)
+        1    0.001    0.001    0.001    0.001 {findContours}
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:461(wrapper)
+        1    0.000    0.000    0.000    0.000 {cvtColor}
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:478(_array2string)
+        1    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(dstack)
+        1    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/lib/shape_base.py:663(dstack)
+        1    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(concatenate)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:409(_get_format_function)
+       16    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/fromnumeric.py:70(_wrapreduction)
+        1    0.000    0.000    0.000    0.000 {absdiff}
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:365(<lambda>)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:1124(__init__)
+       16    0.000    0.000    0.000    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+       34    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+        1    0.000    0.000    0.000    0.000 {medianBlur}
+        7    0.000    0.000    0.000    0.000 {built-in method io.open}
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:709(_formatArray)
+        2    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(sum)
+        2    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/fromnumeric.py:2105(sum)
+     42/7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:718(recurser)
+        7    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(amax)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/fromnumeric.py:2589(amax)
+        2    0.000    0.000    0.000    0.000 {built-in method posix.mkdir}
+        1    0.000    0.000    0.000    0.000 {method 'astype' of 'numpy.ndarray' objects}
+       18    0.000    0.000    0.000    0.000 {built-in method numpy.array}
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:60(_make_options_dict)
+        7    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(amin)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/fromnumeric.py:2714(amin)
+        3    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/posixpath.py:75(join)
+       28    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:695(_extendLine)
+      226    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       28    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:1132(__call__)
+        1    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(atleast_3d)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/_bootlocale.py:23(getpreferredencoding)
+        7    0.000    0.000    0.000    0.000 {built-in method builtins.locals}
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:358(_get_formatdict)
+        5    0.000    0.000    0.000    0.000 {built-in method numpy.empty}
+        8    0.000    0.000    0.000    0.000 {contourArea}
+        1    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/shape_base.py:140(atleast_3d)
+        7    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+        7    0.000    0.000    0.000    0.000 {boundingRect}
+        7    0.000    0.000    0.000    0.000 {built-in method _locale.nl_langinfo}
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/codecs.py:308(__init__)
+       16    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/fromnumeric.py:71(<dictcomp>)
+       21    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+        1    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/lib/shape_base.py:659(_dstack_dispatcher)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/_asarray.py:14(asarray)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/codecs.py:326(reset)
+       44    0.000    0.000    0.000    0.000 {built-in method builtins.abs}
+        7    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        7    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/shape_base.py:208(_arrays_for_stack_dispatcher)
+        3    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/_asarray.py:86(asanyarray)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/arrayprint.py:65(<dictcomp>)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.chdir}
+       14    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+        7    0.000    0.000    0.000    0.000 {method 'discard' of 'set' objects}
+       23    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        3    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/posixpath.py:41(_get_sep)
+        7    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+       14    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/imutils/convenience.py:154(grab_contours)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/codecs.py:259(__init__)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/codecs.py:185(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        7    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        5    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        7    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        7    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/fromnumeric.py:2584(_amax_dispatcher)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/fromnumeric.py:2709(_amin_dispatcher)
+        7    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/codecs.py:275(reset)
+        3    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+        5    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/shape_base.py:136(_atleast_3d_dispatcher)
+        2    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/fromnumeric.py:2100(_sum_dispatcher)
+        5    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/multiarray.py:1043(copyto)
+        1    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/site-packages/numpy/core/multiarray.py:143(concatenate)
+        5    0.000    0.000    0.000    0.000 /home/imitrob/anaconda3/envs/ros2/lib/python3.6/codecs.py:213(setstate)
+
+
